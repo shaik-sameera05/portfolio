@@ -1,0 +1,338 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  background: #0f172a;
+}
+
+.hero-greeting {
+  color: #38bdf8;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  color: #94a3b8;
+  min-height: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+}
+
+.profile-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #020617;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #38bdf8;
+}
+
+.footer-section p {
+  color: #94a3b8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+.section-tag {
+    color: #38bdf8;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.info-card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 12px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h6 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    margin: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .about-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* =========================
+   SKILLS PAGE
+========================= */
+
+.skills-section {
+    min-height: 100vh;
+}
+
+.skills-intro {
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    height: 100%;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.15);
+}
+
+.skill-card h4 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* =========================
+   PROJECT PAGE
+========================= */
+.projects-section {
+    min-height: 100vh;
+}
+
+.projects-intro {
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h4 {
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-info {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item h5 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    color: #38bdf8;
+}

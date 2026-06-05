@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %} Home | Portfolio {% endblock %} 
+{%block content %}
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6">
+        <p class="hero-greeting">Hello, I'm</p>
+
+        <h1 class="hero-title">Shaik Sameera</h1>
+
+        <h2 class="hero-subtitle">
+          <span id="typing-text"></span>
+        </h2>
+
+        <p class="hero-description">
+          Python Developer passionate about building scalable web applications,
+          solving real-world problems, and continuously learning new
+          technologies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary btn-lg me-3"> Download Resume </a>
+
+          <a href="/contact/" class="btn btn-outline-light btn-lg">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        {% load static %}
+        <img src="{% static 'images/profile.jpg' %}"
+     alt="Profile"
+     class="img-fluid profile-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
