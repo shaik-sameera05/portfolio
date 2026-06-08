@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block title %} Home | Portfolio {% endblock %} 
+{% extends 'base.html' %}{%load static %} {% block title %} Home | Portfolio {% endblock %} 
 {%block content %}
 
 <section class="hero-section">
@@ -20,7 +20,9 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#" class="btn btn-primary btn-lg me-3"> Download Resume </a>
+          <a href="{% static 'css/resume.pdf' %}" download class="btn btn-primary btn-lg me-3">
+             Download Resume
+          </a>
 
           <a href="/contact/" class="btn btn-outline-light btn-lg">
             Contact Me
@@ -30,7 +32,7 @@
 
       <div class="col-lg-6 text-center">
         {% load static %}
-        <img src="{% static 'images/profile.jpg' %}"
+         <img src="{% static 'images/profile.jpg' %}"
      alt="Profile"
      class="img-fluid profile-image">
       </div>
